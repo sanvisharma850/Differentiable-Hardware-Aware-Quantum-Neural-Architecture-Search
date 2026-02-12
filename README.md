@@ -7,8 +7,9 @@
 **A Practical Framework for Hardware-Constrained Quantum Neural Architecture Search**
 
 ---
-
-*[ INSERT HERO IMAGE: High-level architecture overview or key performance comparison — `figures/hero_diagram.png`]*
+<p align="center">
+  <img src="figures/fig2_convergence.png" width="700">
+</p>
 
 ---
 
@@ -62,7 +63,10 @@ The result: **Sparse, noise-resilient quantum circuits discovered automatically 
 
 ## Architecture Overview
 
-*[ INSERT: Architecture diagram image — `figures/architecture_diagram.png`]*
+<p align="center">
+  <img src="figures/D-HAQNAS_Architecture_IEEE.png" width="1000">
+</p>
+
 
 ```
 Input Image (28×28)
@@ -102,7 +106,9 @@ Classical Path    Quantum Path     Parallel
 
 ###  PneumoniaMNIST (Binary Classification)
 
-*[ INSERT: Training curves comparison — `figures/pneumonia_training_curves.png`]*
+<p align="center">
+  <img src="figures/baseline_comparison_pneumoniamnist.png" width="700">
+</p>
 
 | Metric | Value |
 |--------|-------|
@@ -116,11 +122,23 @@ Classical Path    Quantum Path     Parallel
 
 **Interpretation:** Matches classical performance with <1/4 of the trainable parameters.
 
----
+<p align="center">
+  <img src="figures/hardware_metrics_pneumoniamnist.png" width="700">
+</p>
 
+<p align="center">
+  <img src="figures/noise_robustness_pneumoniamnist.png" width="45%" />
+  <img src="figures/statistical_significance_pneumoniamnist.png" width="45%" />
+</p>
+
+
+
+
+
+---
 ###  RetinaMNIST (5-Class Diabetic Retinopathy, Data-Scarce)
 
-*[ INSERT: RetinaMNIST comparison chart — `figures/retina_results.png`]*
+
 
 | Model | Accuracy | AUC | Trainable Params |
 |-------|----------|-----|------------------|
