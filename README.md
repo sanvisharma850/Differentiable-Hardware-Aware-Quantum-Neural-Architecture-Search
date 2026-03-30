@@ -121,7 +121,7 @@ where `α` denotes architectural gate-activation parameters, `θ` variational ro
 
 ## Architecture
 <p align="center">
-  <img src="figures/dhaqnas.png" width="75%" />
+  <img src="figures/diagram.png" width="75%" />
 </p>
 
 ### Differentiable Super-Circuit
