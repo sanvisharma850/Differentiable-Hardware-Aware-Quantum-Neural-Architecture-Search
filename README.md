@@ -404,9 +404,8 @@ If this work contributes to your research, please cite:
 ```bibtex
 @article{dhaqnas2025,
   title={Differentiable Hardware-Aware Quantum Neural Architecture Search for Resource-Constrained Medical Imaging},
-  author={[Your Name]},
-  journal={arXiv preprint arXiv:2025.xxxxx},
-  year={2025}
+  author={Sanvi Sharma},
+  ~paper under review~
 }
 ```
 
