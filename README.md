@@ -64,7 +64,7 @@ The result: **Sparse, noise-resilient quantum circuits discovered automatically 
 ## Architecture Overview
 
 <p align="center">
-  <img src="figures/D-HAQNAS_Architecture_IEEE.png" width="1000">
+  <img src="figures/dhaqnas.drawio-1.png" width="1000">
 </p>
 
 
