@@ -120,46 +120,9 @@ where `α` denotes architectural gate-activation parameters, `θ` variational ro
 ---
 
 ## Architecture
-
-```
-Input Image (28×28)
-        │
-        ▼
-┌───────────────────────────────────────────┐
-│          ResNet-18 Backbone               │
-│  Frozen: Conv1–Layer3 (ImageNet weights)  │
-│  Fine-tuned: Layer4 only (1.5M params)    │
-└───────────────────────┬───────────────────┘
-                        │ 512-dim features
-                        ▼
-              Linear Compression W_compress
-                 (512 → n_q features)
-                        │
-           ┌────────────┴─────────────┐
-           │                          │
-           ▼                          ▼
-    Classical Path              Quantum Path
-    (F_class ∈ ℝⁿᵠ)      Differentiable Super-Circuit
-                           ┌──────────────────────────┐
-                           │ Encoding: RY angle embed  │
-                           │   φᵢ = arctan(fᵢ)        │
-                           │ Search: σ(α) soft-masking │
-                           │ Weights: RZ-RY-RZ blocks  │
-                           │ Entangle: CNOT ring topo  │
-                           │ Measure: Pauli-Z ⟨Ẑᵢ⟩    │
-                           └──────────────────────────┘
-                                       │ F_quant ∈ ℝⁿᵠ
-           └────────────┬─────────────┘
-                        ▼
-           Weighted Residual Fusion
-        F_hybrid = F_class + β·W_q·F_quant
-                        │
-                        ▼
-            Linear Classifier (Softmax)
-                        │
-                        ▼
-                   Diagnosis ŷ
-```
+<p align="center">
+  <img src="figures/dhaqnas.drawio-1.png" width="75%" />
+</p>
 
 ### Differentiable Super-Circuit
 
